@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+  <head>
+        <title>COVID vaccine tracker-admin</title>
+            <link rel="stylesheet" type="text/css" href="c19admin.css">
+            <style>
+                body{
+                    background-image: url("https://images.unsplash.com/photo-1585222515068-7201a72c4181?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=667&q=80");
+                    background-repeat: no-repeat;
+                    background-size:100%;
+                }
+                header {
+                    width: 100%;
+                    height: 100px;
+                    background:#172035;
+                    position: absolute;
+                }
+                img#logo {
+                    margin-left: 100px;
+                    margin-right: 100px;
+                    position: absolute;
+                    top: 12px;
+                    left: 0;
+                }
+                nav {
+                    display:inline-block;
+                    margin-left:800px;
+                    margin-top: 30px;
+                }
+                a {
+                    color:white;
+                    text-decoration: none;
+                    font-size: 2em;
+                    font-weight: 2em;
+                    font-family: 'roboto';
+                    margin-right: 20px;
+                    padding: 30px;
+                }
+                a:hover {
+                    color: white;
+                    background: #09568d;
+                    padding: 30px;
+                }
+                footer {
+                    width: 100%;
+                    height: 80px;
+                    background: #172035;
+                    position: absolute;
+                    top: 800px;
+                    left: 0;
+                }
+                p#footer {
+                    text-align: center;
+                    color: white;
+                    margin-top: 32px;
+                    font-size: 1em;
+                }
+                .box input[type="text"],.box input[type="password"] {
+                    font-family: serif;
+                    color: black;
+                    text-align: center;
+                    border: 3px solid #2CFF00;
+                    padding: 10px 5px;
+                    border-radius: 15px;
+                    transition: 0.25px;
+                }
+                .box input[type="submit"] {
+                    background:#B9DFFF;
+                    color:black;
+                    border:1pxsolid#eee;
+                    padding: 10px 32px;
+                    border-radius:20px;
+                    box-shadow:5px5px5px#eee;
+                    text-shadow:none;
+                }
+                .box input[type="submit"]:hover {
+                    background:#016ABC;
+                    color:black;
+                    border:1pxsolid#eee;
+                    border-radius:20px;
+                    box-shadow:5px5px5px#eee;
+                    text-shadow:none;
+                }
+                #xyz{
+                    margin-left: 900px;
+                    margin-top: 150px;
+                }
+            </style>
+  </head>
+
+  <body>
+
+      <header>
+
+        <img id="logo" src="c19logo.png">
+
+        <nav>
+
+          <a href="c19index.html">Home</a>
+          <a href="c19user.php">User</a>
+          <a href="c19admin.html">Admin</a>
+
+        </nav>
+
+      </header>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div id = "xyz"> 
+        <form name="f1" class="box" action = "authentication.php" onsubmit = "return validation()" method = "POST">  
+            <div> 
+                <label style="font-size:40px;"> Username: </label>  
+                <input type="text" id="user" name="user" />  
+            </div>
+            <br>
+            <div>  
+                <label style="font-size:40px;"> Password : </label>  
+                <input type="password" id="pass" name="pass" />  
+            </div>
+            <br>
+            <div>     
+                <input type="submit" class="btn btn-primary" value="Login" />  
+            </div>  
+        </form>  
+    </div>
+    <script>  
+            function validation()  
+            {  
+                var id=document.f1.user.value;  
+                var ps=document.f1.pass.value;  
+                if(id.length=="" && ps.length=="") {  
+                    alert("User Name and Password fields are empty");  
+                    return false;  
+                }  
+                else  
+                {  
+                    if(id.length=="") {  
+                        alert("User Name is empty");  
+                        return false;  
+                    }   
+                    if (ps.length=="") {  
+                    alert("Password field is empty");  
+                    return false;  
+                    }  
+                }                             
+            }  
+    </script>  
+
+  </body>
+
+  <footer>
+
+    <p id="footer">© Copyright 2021. All Rights Reserved. | COVID VACCINE TRACKER</p>
+
+  </footer>
+
+</html>

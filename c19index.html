@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>COVID vaccine tracker-Home</title>
+        <link rel="stylesheet" type="text/css" href="c19global.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <style>
+            body {
+                font-family: roboto;
+                background-image: url("https://media.istockphoto.com/photos/abstract-technology-blue-spotlight-backgrounds-loopable-elements-4k-picture-id1174989484?b=1&k=20&m=1174989484&s=170667a&w=0&h=xe1cvmwKDQGcfsxhiukjYP8PrDEyQ52at9-epfX56y4=");
+                background-repeat: no-repeat;
+                background-size: 100%;
+                background-color:white;
+            }
+            header {
+                width: 100%;
+                height: 100px;
+                background:#172035;
+                position: absolute;
+            }
+            img#logo {
+                margin-left: 100px;
+                margin-right: 100px;
+                position: absolute;
+                top: 12px;
+                left: 0;
+            }
+            nav {
+                display:inline-block;
+                margin-left:800px;
+                margin-top: 30px;
+            }
+            a {
+                color:white;
+                text-decoration: none;
+                font-size: 2em;
+                font-weight: 2em;
+                font-family: 'roboto';
+                margin-right: 20px;
+                padding: 30px;
+            }
+            #para{
+                text-align: justify;
+                text-justify: inter-word;
+                margin-left: 25px;
+                margin-right: 25px;
+            }
+            #heading{
+                text-align: justify;
+                text-justify: inter-word;
+                margin-left: 25px; 
+            }
+            .column {
+                float: left;
+                width: 50%;
+                padding: 10px;
+            }
+            .row::after {
+                content: "";
+                clear: both;
+                display: table;
+                padding: 5px;
+            }
+            .fa {
+                padding: 20px;
+                font-size: 30px;
+                width: 75px;
+                text-align: center;
+                text-decoration: none;
+                border-radius: 100%;
+            }
+
+            .fa:hover {
+                opacity: 0.7;
+            }
+
+            .fa-facebook {
+                background: #3B5998;
+                color: white;
+            }
+
+            .fa-twitter {
+                background: #55ACEE;
+                color: white;
+            }
+            .fa-instagram {
+                background: #fb3958;
+                color: white;
+            }
+            .fa-whatsapp{
+                background: green;
+                color: white;
+            }            
+            footer {
+                width: 100%;
+                height: 80px;
+                background: #172035;
+                position: absolute;
+                margin-top:200px;
+                left: 0;
+            }           
+            #vc{
+                color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <img id="logo" src="c19logo.png">
+            <nav>
+                <a class="b" href="c19index.html">Home</a>
+                <a class="b" href="c19user.php">User</a>
+                <a class="b" href="c19admin.html">Admin</a>
+            </nav>
+        </header>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+    <center class="abc">
+        <div class="slideshow-container" >
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="https://www.unodc.org/res/covid-19_html/COVID-19-banner_1303x323px.png" style="width:100%; height: 50%">     
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="https://www.unodc.org/res/covid-19_html/COVID-19-banner_1303x323px.png" style="width:100%; height: 50%"  alt="" >     
+            </div>
+            <div class="mySlides fade">
+                <div class="numbertext"></div>
+                <img src="https://www.unodc.org/res/covid-19_html/COVID-19-banner_1303x323px.png" style="width:100%; height: 50%" >
+            </div>
+        </div>
+        <br>
+        <div style="text-align:center">
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+            <span class="dot"></span> 
+        </div>
+    </center>
+        <script>
+            var slideIndex = 0;
+            showSlides();
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";  
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {slideIndex = 1}    
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex-1].style.display = "block";  
+                dots[slideIndex-1].className += " active";
+                setTimeout(showSlides, 2000); // Change image every 2 seconds
+            }
+        </script>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <center>
+            <div>
+                <h1 style="font-family:Georgia;color: #172035;font-size: 50px;">COVID19 Vaccination & It's Importance</h1>
+            </div>
+            <div>
+                <p id="para" style="font-size:25px; text-indent: 100px;">Vaccinations against Covid-19 were developed using science that has been in the books for ages. These vaccines are not experimental. They have been through all the stages of development for any new scientific breakthrough. In addition, Covid-19 specific vaccinations are constantly monitored by multiple health organizations purely because of all the pandemonium this virus has caused across the world. Hence, it becomes crucial for every citizen to take part in the vaccination drives organized by their local governmental bodies and other bodies offering the vaccine officially. Here’s a list of important details about vaccinations that make it absolutely necessary for you to NOT miss vaccination against Covid-19.</p>
+
+                <h2 id="heading">Covid-19 Vaccines are effective :</h2>
+
+                <p id="para" style="font-size:25px; text-indent: 100px;">Covid-19 vaccines have been tested by multiple drug administration authorities in the world. They are proven to be effective in reducing your probability of contracting COVID-19.</p>
+
+                <h2 id="heading">You are contributing to mass wellness by getting vaccinated :</h2>
+
+                <p id="para" style="font-size:25px; text-indent: 100px;">Once you are vaccinated, your body is much better prepared to shield off more viruses by making your immune system stronger. At the same time, when you are protecting yourself, you are also protecting those around you.</p>
+
+                <h2 id="heading">A safe way to build your immune system :</h2>
+
+                <p id="para" style="font-size:25px; text-indent: 100px;">Vaccinations are known to boost your immune system by teaching your body how to fight threats. Therefore many consider vaccinations as a way to build up your immune system and the manner in which your body reacts to foreign bodies.</p>
+
+                <h2 id="heading">No Covid Vaccines can infect you with Covid :</h2>
+
+                <p id="para" style="font-size:25px; text-indent: 100px;">Many believe falsely that since the vaccine includes a strand of the virus, you may actually get infected by it. That is not how a virus affects a body and hence you are in no danger by being infected with the disease of the vaccine.</p>
+
+                <h2 id="heading">Covid Vaccines are certified by multiple bodies :</h2>
+                
+                <p id="para" style="font-size:25px; text-indent: 100px;">The Covid Vaccinations that are available by societies, governments and other people-body, are all certified by multiple certification authorities that have very stringent measures of success. If a vaccine is certified, you can be certain it has been tested through proven methods. There are no reasons for any individual to avoid a Covid-19 vaccination and it is our responsibility at Pathkind labs to dismiss any fears anyone has of the vaccination. There are no reasons to avoid a covid-19 vaccine and many reasons to not miss it. Pathkind labs are certified at testing for Covid-19 as well as various other infections, diseases and viruses. Our team of experts have built insight through years of experience and are your number one choice when it comes to health tests and analyses.</p>
+            </div>
+        </center>
+        <center>
+            <div>
+                <h1 style="font-family:Georgia;color: #172035;font-size: 50px;">COVID19 Preventions!</h1>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <img src="https://mulund.ssrvm.org/wp-content/uploads/sites/19/2020/10/100.png" width="600" height="294" alt="">
+                </div>
+                <div class="column">
+                <img src="https://mulund.ssrvm.org/wp-content/uploads/sites/19/2020/10/102.png" width="600" height="294" alt="">
+                </div>
+            </div>
+            <div class="row">
+                <div class="column">
+                    <img src="https://mulund.ssrvm.org/wp-content/uploads/sites/19/2020/10/101.png" width="600" height="294" alt="">
+                </div>
+                <div class="column">
+                    <img src="https://mulund.ssrvm.org/wp-content/uploads/sites/19/2020/10/104.png" width="600" height="294" alt="">
+                </div>
+            </div>
+        </center>
+        <br>
+        <br>
+        <br>
+        <div id="vc">
+        <center>
+            <a href='https://www.symptoma.es/'>Síntomas</a> 
+            <script type='text/javascript' src='https://www.freevisitorcounters.com/auth.php?id=bd81981f486030d5f037a0d9153b0004bc8bb6da'></script>
+            <script type="text/javascript" src="https://www.freevisitorcounters.com/en/home/counter/881567/t/0"></script>
+        </center>
+        </div>
+        <center>
+            <div>
+                <h1 style="font-family:Georgia;color: #172035;font-size: 75px;">Reach us!</h1>
+            </div>
+            <div>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-whatsapp"></a>
+            </div>
+            <div>
+                <h3 style="font-family:Georgia;color: #172035;font-size: 35px;">c19vaccinetracker@gmail.com</h3>
+            </div>
+        </center>
+    </body>
+    <footer>
+        <p id="footer">© Copyright 2021. All Rights Reserved. | COVID VACCINE TRACKER</p>
+    </footer>
+</html>

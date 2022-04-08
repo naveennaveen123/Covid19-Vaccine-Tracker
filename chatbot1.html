@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>TODO supply a title</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+        <script type="text/javascript" src="custom.js"></script>
+        <style>
+            .chat_icon{
+                position: fixed;
+                right: 30px;
+                bottom: 0;
+                font-size: 80px;
+                color: black;
+                cursor: pointer;
+                z-index: 1000;
+            }
+            .chat_box{
+                position: fixed;
+                right: 20px;
+                bottom: 100px;
+                width: 400px;
+                height: 75vh;
+                background: blue;
+                z-index: 1000%;
+                transition: all 0.3s ease-out;
+                transform: scaleY(0);
+            }
+            .chat_box.active{
+                transform: scaleY(1);
+            }
+        </style>
+    </head>
+    <body>
+        <div>TODO write content</div>
+        <div class="chat_icon">
+                      
+        </div>
+        <div class="chat_box">
+            
+        </div>
+    </body>
+</html>
